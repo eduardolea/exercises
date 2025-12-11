@@ -58,6 +58,33 @@ runTest("Invertir 'casa'", exercises.invertirTexto, ["casa"], "asac");
 runTest("Invertir 'JavaScript'", exercises.invertirTexto, ["JavaScript"], "tpircSavaJ");
 
 
+// --- NIVEL 3 ---
+console.log("\n" + colors.yellow + "--- Nivel 3: Algoritmos ---" + colors.reset);
+
+// Pruebas para Filtrar Pares
+runTest("Filtrar Pares [1,2,3,4]", exercises.filtrarPares, [[1, 2, 3, 4]], [2, 4]);
+runTest("Filtrar Pares [1,3,5]", exercises.filtrarPares, [[1, 3, 5]], []);
+
+// Pruebas para Es Palíndromo
+runTest("Palíndromo 'radar'", exercises.esPalindromo, ["radar"], true);
+runTest("No Palíndromo 'casa'", exercises.esPalindromo, ["casa"], false);
+// runTest("Palíndromo con mayúsculas 'Ana'", exercises.esPalindromo, ["Ana"], true); // Opcional si el usuario limpia el string
+
+// Pruebas para FizzBuzz
+runTest("FizzBuzz (3)", exercises.fizzBuzz, [3], "Fizz");
+runTest("FizzBuzz (5)", exercises.fizzBuzz, [5], "Buzz");
+runTest("FizzBuzz (15)", exercises.fizzBuzz, [15], "FizzBuzz");
+runTest("FizzBuzz (2)", exercises.fizzBuzz, [2], "2");
+
+// Pruebas para Eliminar Duplicados
+runTest("Unicos [1,2,2,3]", exercises.eliminarDuplicados, [[1, 2, 2, 3]], [1, 2, 3]);
+runTest("Unicos ['a','a','b']", exercises.eliminarDuplicados, [['a', 'a', 'b']], ['a', 'b']);
+
+// Pruebas para Capitalizar Título
+runTest("Capitalizar 'hola mundo'", exercises.capitalizarTitulo, ["hola mundo"], "Hola Mundo");
+runTest("Capitalizar 'javascript es genial'", exercises.capitalizarTitulo, ["javascript es genial"], "Javascript Es Genial");
+
+
 // --- RESUMEN ---
 console.log("\n===========================================");
 if (passed === total) {
